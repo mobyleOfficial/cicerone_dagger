@@ -1,20 +1,19 @@
-# Cicerone com Dagger 2
-Esse repositório apresenta uma implementação de uma Bottom Navigation Bar, 
-utilizando a lib Cicerone para navegação, e Dagger2 para injeção de dependências.
+# Cicerone with Dagger 2
+This repository contains a project that shows how to use Cicerone to navigate between Fragments, and Dagger2 to dependency injection.
 
-## Bibliotecas
+## Libraries
 - [Cicerone](https://github.com/terrakok/Cicerone)
 - [Dagger2](https://github.com/google/dagger)
 
-## Como funciona?
+## How does it works?
 ![alt text](https://i.imgur.com/ZM0SIYJ.png)
 
-Como pode ser visto na imagem acima, a ideia é utilizar dois contêineres, um para a Activity (que contém a Bottom Navigation Bar), e outro para o Fragment responsável por administrar os fluxos das abas. Sempre que há uma mudança de aba, a visibilidade dos Fragments das abas é trocada. Cada uma das abas possui a própria instância do Cicerone (criadas com o Dagger2)
+As shown in the image, there're 2 containers, one inside the Activity (contains the Bottom Navigation Bar), and other to the Fragment responsable to manage the apps flow. Everytime the user change tabs, the fragments visibility is changed. Each tab has it's own Cicerone instance (injected using Dagger2)
 
-## Referências
-[Artigo base](https://medium.com/@yurimachioni/creating-an-instagram-like-flow-using-cicerone-and-dagger2-bottomnavigation-with-fragments-777771ff4401)
+## References
+[Base Article](https://medium.com/@yurimachioni/creating-an-instagram-like-flow-using-cicerone-and-dagger2-bottomnavigation-with-fragments-777771ff4401)
 
-## Autor
+## Author
 Bruno Abe
 
 ## License
